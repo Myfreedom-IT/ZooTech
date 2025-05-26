@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    color: black;
+    background-color: rgb(255 252 247);
+}
+
+h1, h2, h3 {
+    font-family: "Jost", sans-serif;
+}
+
+main .container {
+    width: 86%;
+    padding: 5% 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.promocodes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+a {
+    font-size: 16px;
+    color: rgb(89, 93, 216);
+}
+
+.order {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.delivary, .payment, .orders {
+    display: flex;
+    flex: 0 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    background-color: #a7aaf052;
+    padding: 30px 40px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.delivary .input {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.delivary .input p{
+    color: #0000005a;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+label span {
+    color: red;
+}
+  
+input, select {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.input .comment{
+    padding: 6px 6px 80px;
+}
+
+.input .phone {
+    width: 250px;
+}
+  
+input:focus, select:focus {
+    border-color: #0077cc;
+    outline: none;
+}
+
+.name, .address {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.option {
+    display: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 6px;
+    gap: 10px;
+    position: relative;
+}
+
+input#cash, input#credit-card, input#paypal {
+    width: 12px;
+    height: 12px;
+    padding: 6px;
+}
+  
+.option label {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+}
+
+.agreement {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.terms {
+    width: 12px;
+    height: 12px;
+    margin: 6px;
+}
+
+.choose-cards {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+}
+
+.choose-cards button {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 50%;
+}
+
+.order-button {
+    background-color: #F5BEC4;
+    padding: 12px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: black;
+    width: 40;
+}
+
+.option .disabled {
+    display: none;
+}
+
+.option input:checked ~ .disabled {
+  display: flex;
+  padding: 6px 6px 6px 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #3333338c;
+  cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+.buttons button {
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: black;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #f5f5f5;
+}
+
+.buttons img {
+    height: 30px;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button:checked {
+    border: 1px solid #0077cc;
+}
+
+.option input[type="radio"]:checked + label {
+    width: 450px;
+    margin-bottom: 14px;
+}
+
+.orders {
+    display: flex;
+    flex: 1;
+    max-width: calc(100%);
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.product {
+    background-color: rgb(253, 247, 239);
+    height: 180px;
+    border-radius: 14px;
+    width: 100%;
+    display: flex;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .order {
+        flex-direction: column;
+        gap: 40px;
+    }
+ .delivary, .payment, .orders {
+        flex: none;
+        max-width: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .products {
+        grid-template-columns: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .name, .address {
+        flex-direction: column;
+        gap: 30px;
+    }
+ .buttons {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+ .buttons button {
+        width: 100%;
+    }  
+}
+
+@media (max-width: 460px) {
+    .allconditions h1 {
+        font-size: 32px;
+    }
+}
