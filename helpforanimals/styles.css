@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    color: black;
+    background-color: rgb(255 252 247);
+}
+
+h1, h2, h3 {
+    font-family: "Jost", sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+main .container {
+    width: 86%;
+    padding: 5% 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.postcard-help {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.cat-dog {
+    z-index: 1;
+}
+
+.postcard-help .postcard-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    margin-left: -50px;
+    z-index: 2;
+} 
+
+.another-help {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.already-helped-list {
+    width: 100%;
+}
+
+.already-helped-list .help-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+    padding: 40px 0px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.help-list hr {
+    width: 1px;
+    height: 120px;
+    background-color: rgb(187 190 255);
+    border: none;
+}
+
+.help-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.help-item img {
+    width: 100px;
+}
+
+.help-item p {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.another-help a {
+    font-size: 20px;
+    color: rgb(89, 93, 216);
+}
+
+@media (max-width: 850px) {
+    .postcard-help {
+        flex-direction: column;
+        gap: 40px;
+    }
+ .postcard-help .postcard-text {
+        position: none;
+        margin-left: 0px;
+        z-index: none;
+    }
+ .help-item img {
+        width: 80px;
+    }
+}
+
+
+@media (max-width: 680px) {
+    .help-item p {
+        font-size: 12px;
+    }
+ .already-helped-list .help-list {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+ .help-item {
+        flex: 0 1 calc(30% - 20px);
+    }
+ .help-list hr {
+        display: none;
+    }
+ .another-help a {
+        max-width: 230px;
+    }
+}
+
+
+@media (max-width: 460px) {
+    .already-helped-list .help-list {
+        justify-content: space-between;
+    }
+    
+    .cat-dog {
+        width: 86%;
+    }
+ .allconditions h1 {
+        font-size: 32px;
+    }
+ .help-item {
+        flex: 0 1 calc(45% - 20px);
+    }
+}

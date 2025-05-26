@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    color: black;
+    background-color: rgb(255 252 247);
+}
+
+h1, h2, h3 {
+    font-family: "Jost", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(166, 169, 240);
+    position: relative;
+}
+
+header .container {
+    width: 86%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.for-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.pages a {
+    width: auto;
+    font-size: 18px;
+}
+
+.reactions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.icons-reactions {
+    cursor: pointer;
+}
+
+.for-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 960px) {
+    .pages a {
+        max-width: 85px;
+    }
+ .reactions {
+        gap: 20px;
+    }
+ .logo img {
+        width: 150px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 700px) {
+    .logo img {
+        width: 100px;
+        height: 40px;
+    }
+ .icons-reactions {
+        width: 30px;
+        height: 30px;
+    }
+ .pages {
+        gap: 20px;
+    }
+ .pages a {
+        max-width: 65px;
+        width: auto;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+        display: none;
+    }
+ .pages {
+        justify-content: flex-start;
+    }
+}
