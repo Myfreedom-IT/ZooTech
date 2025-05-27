@@ -28,7 +28,7 @@ function createCard(array) {
                         <div class="for-number"><p>${element.cardRating}</p></div>
                     </div>
                 </div>
-                <div class="titel">${element.titel}</div>
+                <div class="title">${element.title}</div>
                 <div class="description">${element.description}</div>
                 <div class="buttons">
                     <div class="summ" id="summ-${element.id}">

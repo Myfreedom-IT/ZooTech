@@ -90,7 +90,7 @@ nav {
 
 
 main .container {
-    width: 86%;
+    width: 70%;
     padding: 5% 0;
     margin: 0 auto;
     display: flex;
@@ -117,7 +117,6 @@ main .container {
 }
 
 .card {
-    width: 90%;
     margin: 0 auto;
     height: 280px;
     padding: 10px;
@@ -173,24 +172,24 @@ main .container {
 }
 
 .important .price {
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 500;
     width: 150px;
     height: 40px;
     display: flex;
     align-items: flex-end;
     position: absolute;
     left: 0px;
-    top: 0px;
+    top: -25px;
 }
 
-.for-number{
+.for-number {
     width: 100px;
     font-size: 25px;
     height: 0px;
     font-weight: 500;
     color: black;
-    top: 0px;
+    top: -20px;
     left: 200px;
     position: absolute;
 }
@@ -199,13 +198,15 @@ main .container {
     width: 50px;
     height: 50px;
     position: absolute;
-    top: -15px;
+    top: -30px;
     left: 150px;
 }
 
-.important .rating img{
-    width: 45px;
-    height: 45px;
+.important img {
+    position: absolute;
+    top: -20px;
+    width: 50px;
+    height: 50px;
 }
 
 .for-extra-info {
@@ -240,6 +241,7 @@ main .container {
     align-items: center;
 
 }
+
 
 .for-extra-info .buttons .summ {
     width: 160px;
@@ -447,4 +449,120 @@ footer .other {
     position: absolute;
     bottom: 0px;
     right: 0px;
+}
+
+@media (max-width: 1800px) {
+    .container {
+        width: 70%;
+    }
+
+    .for-extra-info .titel {
+        font-size: 24px;
+    }
+
+    .for-extra-info .description {
+        font-size: 14px;
+    }
+
+    .important .rating {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 0px;
+        left: 165px;
+    }
+
+    .important .rating img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .important .price {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .for-extra-info .titel {
+        font-size: 22px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .for-card-photo {
+        width: 185px;
+        height: 185px;
+    }
+
+    .photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .for-extra-info {
+        height: 250px;
+    }
+
+    .for-extra-info .description {
+        font-size: 12px;
+    }
+
+    .for-extra-info .titel {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    .for-extra-info .buttons {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    .for-extra-info .titel {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .for-extra-info .description {
+        font-size: 10px;
+    }
+
+    .for-number {
+        left: 160px;
+    }
+
+    .important .rating {
+        left: 124px;
+    }
+}
+
+@media (max-width: 700px) {
+    .for-extra-info .titel {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .for-card-photo {
+        width: 152px;
+        height: 152px;
+    }
+
+    .for-extra-info .description {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 40ch;
+    }
+
+    .for-extra-info {
+        height: 200px;
+    }
 }
