@@ -16,7 +16,7 @@ function createCard(array) {
                 <img src="./images/tresh-cart.png" alt="#" class="tresh-cart" id="tresh-cart-${element.id}">
             </button>
             <div class="for-card-photo">
-                <img src="${element.src}" alt="#" class="photo">
+                <img src=".${element.src}" alt="#" class="photo">
             </div>
             <div class="for-extra-info">
                 <div class="price-rating">
