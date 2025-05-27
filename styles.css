@@ -545,6 +545,9 @@ main .container {
 .heart img {
     width: 50px;
     height: 50px;
+    position: relative;
+    top: 40px;
+    
 }
 
 .for-bt-text {
@@ -686,6 +689,14 @@ main .container {
         margin: 0 auto;
         padding: 10px;
     }
+    .heart img {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        top: -22px;
+        left: 100px;
+        
+    }
 
     .text-for-circle {
         width: 100px;
@@ -707,11 +718,14 @@ main .container {
 
     .card {
         flex: 0 1 calc(23% - 10px);
-        max-width: calc(23% - 10px);
-        min-width: calc(23% - 10px);
+        /* max-width: calc(23% - 10px);
+        min-width: calc(23% - 10px); */
         min-height: 300px;
         max-height: 300px;
         display: flex;
+    }
+    .cards{
+        padding-left: 100px;
     }
 
     .card-info {
